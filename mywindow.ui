@@ -11,7 +11,11 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>귀여미's bennchmark</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../Desktop/icon.jpg</normaloff>../../Desktop/icon.jpg</iconset>
   </property>
   <widget class="QLabel" name="log">
    <property name="geometry">

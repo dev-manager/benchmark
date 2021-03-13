@@ -39,8 +39,8 @@ class MyWindow(QMainWindow, form_class):
             if time.time() - start > 1.5:
                 succeed.append(index)
                 self.result.setText('{}회를 {}초만에 시행했습니다'.format(index, round(time.time() - daemon_start, 3)))
-                self.score_lcd.display(index * round(time.time() - daemon_start, 2))
-                break
+                self.score_lcd.display(index / round(time.time() - daemon_start, 2) * 100)
+                return
 
 
 app = QApplication(sys.argv)
